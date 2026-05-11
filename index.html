@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- TDK SEO 优化 -->
+    <title>Precision CNC Machining | Professional CNC Machining Services</title>
+    <meta name="description" content="Specialized precision CNC machining for industrial components. Our CNC machining services provide reliable manufacturing with strict adherence to technical tolerances.">
+    <meta name="keywords" content="precision cnc machining, cnc machining services, metal components, industrial milling, turning services">
+
+    <style>
+        :root {
+            --primary-slate: #1e293b;
+            --accent-blue: #2563eb;
+            --text-body: #475569;
+            --bg-light: #f8fafc;
+            --border-gray: #e2e8f0;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            line-height: 1.7;
+            color: var(--text-body);
+            margin: 0;
+            padding: 0;
+            background: #ffffff;
+        }
+
+        /* 导航条 */
+        nav {
+            padding: 1.25rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border-gray);
+            background: #fff;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .logo { font-weight: 700; color: var(--primary-slate); font-size: 1.1rem; }
+        .site-link {
+            background: var(--accent-blue);
+            color: #fff;
+            padding: 8px 18px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .container { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+
+        header { padding: 40px 0; text-align: center; }
+        h1 { font-size: 2.25rem; color: var(--primary-slate); margin-bottom: 0.5rem; }
+        .sub-header { font-size: 1.1rem; color: #64748b; }
+
+        /* 图片容器优化：解决显示不全问题 */
+        .hero-img {
+            width: 100%;
+            max-height: 500px; /* 限制最大高度，防止图片过长 */
+            background: var(--bg-light);
+            border-radius: 12px;
+            margin-bottom: 40px;
+            border: 1px solid var(--border-gray);
+            display: block; /* 改为块级，让容器由图片撑开 */
+            overflow: hidden;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        .hero-img img { 
+            width: 100%; 
+            height: auto; /* 关键：高度自动，保持原始比例 */
+            display: block;
+            object-fit: contain; /* 保证完整显示图片内容 */
+        }
+
+        h2 { font-size: 1.75rem; color: var(--primary-slate); margin: 40px 0 20px; }
+        
+        /* 服务链接区块 */
+        .service-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+        .service-card {
+            padding: 24px;
+            background: var(--bg-light);
+            border: 1px solid var(--border-gray);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        .service-card:hover { 
+            border-color: var(--accent-blue);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        .service-card h3 { margin-top: 0; color: var(--primary-slate); font-size: 1.2rem; }
+        .service-card a { color: var(--accent-blue); text-decoration: none; font-weight: 600; font-size: 0.95rem; }
+
+        table { width: 100%; border-collapse: collapse; margin: 25px 0; font-size: 0.95rem; }
+        th, td { padding: 12px; border: 1px solid var(--border-gray); text-align: left; }
+        th { background: var(--bg-light); font-weight: 600; color: var(--primary-slate); }
+
+        .faq-item { margin-bottom: 25px; padding-bottom: 20px; border-bottom: 1px solid var(--bg-light); }
+        .faq-item strong { display: block; color: var(--primary-slate); margin-bottom: 8px; font-size: 1.05rem; }
+
+        .final-cta {
+            background: #FE7D0B;
+            color: #fff;
+            padding: 50px 20px;
+            border-radius: 12px;
+            text-align: center;
+            margin: 60px 0;
+        }
+        .final-cta p { margin-bottom: 20px; font-size: 1.1rem; }
+        .final-cta a { 
+            color: #fff; 
+            font-weight: 700; 
+            text-decoration: none; 
+            font-size: 1.1rem;
+            border: 2px solid var(--accent-blue);
+            padding: 12px 30px;
+            border-radius: 6px;
+            background: var(--accent-blue);
+            transition: background 0.2s;
+        }
+        .final-cta a:hover { background: transparent; }
+
+        footer { text-align: center; padding: 40px 0; font-size: 0.85rem; color: #94a3b8; border-top: 1px solid var(--border-gray); }
+
+        @media (max-width: 640px) {
+            h1 { font-size: 1.75rem; }
+            header { padding: 30px 0; }
+            .hero-img { max-height: 300px; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">PRECISION CORE</div>
+        <a href="https://ms-machining.com/" class="site-link" target="_blank">View Services</a>
+    </nav>
+
+    <div class="container">
+        <header>
+            <h1>Precision CNC Machining</h1>
+            <p class="sub-header">Technical Manufacturing Solutions for Industrial Requirements</p>
+        </header>
+
+        <div class="hero-img">
+            <!-- 使用 loading="lazy" 优化加载速度 -->
+            <img src="https://ms-machining.com/wp-content/uploads/2026/03/3-Axis-vs.-5-Axis-vs.-Mill-Turn-1.webp" 
+                 alt="Precision CNC Milling, Turning, and Mill-Turn Process" 
+                 loading="lazy">
+        </div>
+
+        <main>
+            <section>
+                <h2>Reliable CNC Machining Services</h2>
+                <p>Our approach to <strong>precision CNC machining</strong> is grounded in technical accuracy and process stability. We provide specialized <strong>cnc machining services</strong> that prioritize dimensional integrity and material performance, serving sectors where consistency is a fundamental requirement.</p>
+            </section>
+
+            <section class="service-links">
+                <div class="service-card">
+                    <h3>CNC Milling Services</h3>
+                    <p>High-accuracy vertical and horizontal milling for complex metal components.</p>
+                    <a href="https://ms-machining.com/cnc-milling/" target="_blank">View Milling Specs &rarr;</a>
+                </div>
+                <div class="service-card">
+                    <h3>CNC Turning Services</h3>
+                    <p>Specialized lathe operations for components requiring high concentricity.</p>
+                    <a href="https://ms-machining.com/cnc-turning-finishes/" target="_blank">View Turning Specs &rarr;</a>
+                </div>
+                <div class="service-card">
+                    <h3>Custom Solutions</h3>
+                    <p>Tailored manufacturing workflows for low to medium volume production runs.</p>
+                    <a href="https://ms-machining.com/5-axis-machining-services/" target="_blank">Explore Solutions &rarr;</a>
+                </div>
+            </section>
+
+            <section>
+                <h2>Technical Specifications</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Parameter</th>
+                            <th>Standard Capability</th>
+                            <th>Precision Specification</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Dimensional Tolerance</td>
+                            <td>&plusmn; 0.125 mm</td>
+                            <td>&plusmn; 0.005 mm</td>
+                        </tr>
+                        <tr>
+                            <td>Hole Tolerance</td>
+                            <td>&plusmn; 0.050 mm</td>
+                            <td>&plusmn; 0.010 mm</td>
+                        </tr>
+                        <tr>
+                            <td>Surface Roughness (Ra)</td>
+                            <td>3.2 &mu;m</td>
+                            <td>0.4 &mu;m</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section>
+                <h2>Industry FAQ</h2>
+                <div class="faq-item">
+                    <strong>What materials are commonly used in your CNC machining services?</strong>
+                    <p>We work with a variety of industrial metals including Aluminum, Stainless Steel, Titanium, and high-performance engineering plastics.</p>
+                </div>
+                <div class="faq-item">
+                    <strong>How is quality verified for precision components?</strong>
+                    <p>Quality is maintained through standardized inspection protocols using calibrated metrology equipment to ensure adherence to specified tolerances.</p>
+                </div>
+            </section>
+
+            <div class="final-cta">
+                <p>For comprehensive technical data and service inquiries:</p>
+                <a href="https://ms-machining.com/" target="_blank">Visit Our Official Portal &rarr;</a>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Precision Machining Hub. Focused on Industrial Manufacturing Excellence.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
